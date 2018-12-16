@@ -1,6 +1,6 @@
 /* Dependencies: axios */
 
-Vue.mixin({
+var resourceMixin = {
     data: {
         resourceUrl: '/resource'
     },
@@ -44,4 +44,4 @@ Vue.mixin({
 
         }
     }
-})
+};
