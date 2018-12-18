@@ -13,7 +13,7 @@ This package uses [axios](https://github.com/axios/axios) to get resource data t
 
 ## Basic usage
 
-This package automatically call `Vue.mixin()`.  
+This package automatically calls `Vue.mixin()`.  
 So, you don't need to set `mixins`.
 
     <script src="/PATH/TO/YOUR/FOLDER/v-flexible-resource/resource.js"></script>
