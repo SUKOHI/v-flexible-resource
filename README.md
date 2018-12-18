@@ -11,6 +11,11 @@ This package uses [axios](https://github.com/axios/axios) to get resource data t
 
 # Usage
 
+## Basic usage
+
+This package automatically `Vue.mixin()`.  
+So, you don't need to set `mixins`.
+
     <script src="/PATH/TO/YOUR/FOLDER/v-flexible-resource/resource.js"></script>
     <script>
     
@@ -33,7 +38,23 @@ This package uses [axios](https://github.com/axios/axios) to get resource data t
         })
     
     </script>
-    
+
+## Resource URL
+
+You can change resource URL by overwriting `resourceUrl`.  
+
+    new Vue({
+        el: '#app',
+        data: {
+            resourceUrl: '/YOUR/RESOURCE/URL'
+        },
+        mounted: function() {
+        
+            // ...
+        
+        }
+    });
+
 # License
 
 This package is licensed under the MIT License.
