@@ -28,16 +28,23 @@ So, you don't need to set `mixins`.
             mounted() {
     
                 var keys = ['userTypes', 'userTypeCollection'];
-                this.resource(keys, function(data){
-    
-                    console.log(data);
-    
-                });
+                this.resource(keys);
     
             }
         })
     
     </script>
+
+## Callback
+
+The second argument of `resource()` is for callback.  
+And callback has resource data.
+
+    this.resource(keys, function(data){
+
+        console.log(data);
+
+    });
 
 ## Resource URL
 
