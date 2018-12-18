@@ -1,15 +1,22 @@
 {
   "name": "v-flexible-resource",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Vue mixin that allows you to get resource data from FlexibleResource which is a Laravel package.",
-  "main": "resource.js",
+  "main": "dist/resource.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["Vue","resource", "Laravel"],
+  "keywords": [
+    "Vue",
+    "resource",
+    "Laravel"
+  ],
   "author": "Sukohi Kuhoh",
   "license": "MIT",
   "dependencies": {
     "axios": "*"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
   }
 }

@@ -1,13 +1,13 @@
 /* Dependencies: axios */
 
-var resourceMixin = {
-    data: {
-        resourceUrl: '/resource'
+Vue.mixin({
+    data: () => {
+        return {
+            resourceUrl: '/resource'
+        };
     },
     methods: {
-        resource: function(keys, callback) {
-
-            var self = this;
+        resource(keys, callback) {
 
             if(typeof keys === 'string') {
 
@@ -20,13 +20,13 @@ var resourceMixin = {
                     keys: keys.join('|')
                 }
             };
-            axios.get(this.resourceUrl, params).then(function(json){
+            axios.get(this.resourceUrl, params).then((json) => {
 
                 var data = json.data;
 
                 for(var key in data) {
 
-                    Vue.set(self, key, data[key]);
+                    Vue.set(this, key, data[key]);
 
                 }
 
@@ -44,4 +44,4 @@ var resourceMixin = {
 
         }
     }
-};
+});

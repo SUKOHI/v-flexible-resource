@@ -16,7 +16,6 @@ This package uses [axios](https://github.com/axios/axios) to get resource data t
     
         new Vue({
             el: '#app',
-            mixins: [resourceMixin],
             data: {
                 userTypes: {},
                 userTypeCollection: []
